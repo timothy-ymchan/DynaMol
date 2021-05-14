@@ -1,0 +1,36 @@
+#Basic parameters 
+N =  512 #no. of particles
+dt = 1e-3
+t_lim = 500.0
+
+#Simulation parameters
+kb = 8.6173324e-5                # boltzmann constant (eV/K)
+m_Ar  = 39.948                   # mass of Argon atom (u)
+m_Xe  = 131.293                  # mass of Xenon atom (u)
+m0 = 1.0364272e-4                # 1u to eV ps^2 Ao^-2 conversion 
+T  = 0.15                        # 273.15 K
+sig_ArAr = 3.40                  # LJ length scale of Ar-Ar (angstrom)
+sig_ArXe = 3.66                  # LJ length scale of Ar-Xe (angstrom)
+sig_XeXe = 4.10                  # LJ length scale of Xe-Xe (angstrom)
+eps_ArAr = 1.03e-2               # LJ energy scale of Ar-Ar (eV)
+eps_ArXe = 1.51e-2               # LJ energy scale of Ar-Xe (eV)
+eps_XeXe = 1.90e-2               # LJ energy scale of Xe-Xe (eV)
+
+# Sweep and Prune optimization
+sp_enable = false                # Failed implementation, don't turn on
+
+# Moving average
+moving_average_frames = 2000    # Moving average size
+
+# Berendsen thermostat
+thermostat_enable = true
+thermostat_temp   = 16.15       # Thermostat temperature (K)
+thermostat_tau    = 10          # Thermostat time scale (ps)
+
+# Box boundaries (in angstrom)
+x1min = 0
+x1max = 35
+x2min = 0
+x2max = 35
+x3min = 0
+x3max = 35
